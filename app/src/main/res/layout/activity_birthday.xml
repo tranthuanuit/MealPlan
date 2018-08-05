@@ -48,7 +48,8 @@
                 android:text="Continue"
                 android:layout_below="@+id/calendar"
                 android:layout_marginTop="10dp"
-                android:layout_alignParentBottom="true" />
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="false"/>
 
         </RelativeLayout>
 

@@ -1,6 +1,6 @@
 package com.thuan.mealplan;
 
-public interface BaseView {
+public interface BasePresenter {
     void mappingView();
     void setupListener();
 }

@@ -1,7 +1,7 @@
 package com.thuan.mealplan.birthday;
 
-public interface BirthDayPresenter {
-    public void mappingView();
-    public void setupListener();
-    public void navigateToHeightActivity();
+import com.thuan.mealplan.BasePresenter;
+
+public interface BirthDayPresenter extends BasePresenter {
+    void navigateToHeightActivity();
 }

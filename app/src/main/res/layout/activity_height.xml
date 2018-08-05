@@ -6,4 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".height.HeightActivity">
 
+    <ImageView
+        android:id="@+id/heihgtIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/heightTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heihgtIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Your heihgt" />
+
+    <view
+        android:id="@+id/heightRecycleView"
+        class="android.support.v7.app.AlertController$RecycleListView"
+        android:layout_width="100dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/heightTitle"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/heihgtContinueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heightRecycleView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Continue"
+        android:textAllCaps="false" />
 </RelativeLayout>
