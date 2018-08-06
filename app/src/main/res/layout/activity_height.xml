@@ -5,17 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".height.HeightActivity">
-    <!--<include-->
-        <!--android:id="@+id/toolbar"-->
-        <!--layout="@layout/tool_bar" />-->
+
     <com.thuan.mealplan.Toolbar
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"/>
 
-    </com.thuan.mealplan.Toolbar>
     <ImageView
         android:id="@+id/heihgtIcon"
+        android:layout_below="@+id/toolBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -31,22 +29,21 @@
         android:layout_marginTop="10dp"
         android:text="Your heihgt" />
 
-    <view
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/heightRecycleView"
-        class="android.support.v7.app.AlertController$RecycleListView"
-        android:layout_width="100dp"
-        android:layout_height="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/heightTitle"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_below="@+id/heightRecycleView"
-        android:id="@+id/heihgtContinueButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/heightRecycleView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:id="@+id/btnContinue"
         android:text="Continue"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:layout_below="@id/heightRecycleView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
 </RelativeLayout>

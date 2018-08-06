@@ -15,6 +15,13 @@ public class HeightPresenterImpl implements HeightPresenter {
     }
 
     @Override
+    public void dismiss() {
+        if(heightView != null) {
+            heightView.dismiss();
+        }
+    }
+
+    @Override
     public void mappingView() {
         if(heightView != null) {
             heightView.mappingView();

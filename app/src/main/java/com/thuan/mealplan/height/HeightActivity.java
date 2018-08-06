@@ -27,11 +27,17 @@ public class HeightActivity extends AppCompatActivity implements HeightView {
         setContentView(R.layout.activity_height);
         presenter = new HeightPresenterImpl(this);
         presenter.mappingView();
+        presenter.setupListener();
     }
 
     @Override
     public void navigateToWeight() {
         presenter.navigateToWeightActivity();
+    }
+
+    @Override
+    public void dismiss() {
+        finish();
     }
 
     @Override
@@ -45,8 +51,10 @@ public class HeightActivity extends AppCompatActivity implements HeightView {
         toolbar.setOnClickBack(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                presenter.dismiss();
             }
         });
     }
+
+
 }

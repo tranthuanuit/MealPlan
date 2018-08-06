@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="50dp"
     android:background="@color/colorPrimary">
 
-    <ImageButton
+    <ImageView
         android:id="@+id/backButton"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:background="#FFFFFF"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_left_arrow"/>
 
     <TextView
         android:id="@+id/toolBarTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:text="Meal Plan" />
+        android:text="Meal Plan"
+        android:layout_centerVertical="true"
+        android:textColor="#FFFFFF"/>
 </RelativeLayout>

@@ -5,12 +5,13 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class Toolbar extends RelativeLayout {
 
-    private ImageButton btnBack;
+    private ImageView btnBack;
     private TextView tvTitle;
 
     public Toolbar(Context context) {

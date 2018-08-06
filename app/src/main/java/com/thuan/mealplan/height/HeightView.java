@@ -4,4 +4,5 @@ import com.thuan.mealplan.BaseView;
 
 public interface HeightView extends BaseView{
     void navigateToWeight();
+    void dismiss();
 }
