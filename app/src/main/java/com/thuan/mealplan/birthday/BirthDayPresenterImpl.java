@@ -2,30 +2,16 @@ package com.thuan.mealplan.birthday;
 
 public class BirthDayPresenterImpl implements BirthDayPresenter {
 
-    private BirthDayView mainView;
+    private BirthDayView view;
 
-    public BirthDayPresenterImpl(BirthDayView mainView) {
-        this.mainView = mainView;
-    }
-
-    @Override
-    public void mappingView() {
-        if(mainView != null) {
-            mainView.mappingView();
-        }
-    }
-
-    @Override
-    public void setupListener() {
-        if(mainView != null) {
-            mainView.setupListener();
-        }
+    public BirthDayPresenterImpl(BirthDayView view) {
+        this.view = view;
     }
 
     @Override
     public void navigateToHeightActivity() {
-        if(mainView != null) {
-            mainView.navigateToHeightActivity();
+        if(view != null) {
+            view.navigateToHeightActivity();
         }
     }
 }

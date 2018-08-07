@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".height.HeightActivity"></activity>
+        <activity android:name=".height.HeightActivity"/>
+        <activity android:name=".weight.WeightActivity"/>
+        <activity android:name=".change.ChangeActivity"/>
+        <activity android:name=".choosegoal.ChooseGoalActivity"/>
     </application>
 
 </manifest>

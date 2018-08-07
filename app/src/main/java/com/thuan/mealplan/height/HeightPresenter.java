@@ -1,8 +1,6 @@
 package com.thuan.mealplan.height;
 
-import com.thuan.mealplan.BasePresenter;
-
-public interface HeightPresenter extends BasePresenter {
+public interface HeightPresenter {
     void navigateToWeightActivity();
     void dismiss();
 }

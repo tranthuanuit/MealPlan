@@ -1,8 +1,6 @@
 package com.thuan.mealplan.birthday;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
@@ -10,25 +8,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.thuan.mealplan.R;
+import com.thuan.mealplan.base.BaseActivity;
 import com.thuan.mealplan.height.HeightActivity;
 
-public class BirthDayActivity extends AppCompatActivity implements BirthDayView {
+public class BirthDayActivity extends BaseActivity implements BirthDayView {
 
     private BirthDayPresenter presenter;
     private ImageView imAppIcon;
     private TextView tvAppTitle;
     private CalendarView calendarView;
     private Button btnContinue;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_birthday);
-        presenter = new BirthDayPresenterImpl(this);
-        presenter.mappingView();
-        presenter.setupListener();
-    }
-
     @Override
     public void mappingView() {
         imAppIcon = findViewById(R.id.appIcon);
@@ -45,6 +34,16 @@ public class BirthDayActivity extends AppCompatActivity implements BirthDayView 
                 presenter.navigateToHeightActivity();
             }
         });
+    }
+
+    @Override
+    public void initData() {
+        presenter = new BirthDayPresenterImpl(this);
+    }
+
+    @Override
+    public int getLayoutResource() {
+        return R.layout.activity_birthday;
     }
 
     @Override

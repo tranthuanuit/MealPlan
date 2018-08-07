@@ -12,7 +12,7 @@
         android:layout_height="wrap_content" />
 
     <ImageView
-        android:id="@+id/imgHeihgtIcon"
+        android:id="@+id/heihgtIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolBar"
@@ -24,10 +24,10 @@
         android:id="@+id/heightTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imgHeihgtIcon"
+        android:layout_below="@+id/heihgtIcon"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="Your height"
+        android:text="Current weight"
         android:textSize="20dp" />
 
     <TextView
@@ -39,8 +39,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-        android:textAlignment="center"
-        android:text="Enter your height. The taller you are the more calories your body needs" />
+        android:text="Enter your current weight" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/heightRecycleView"

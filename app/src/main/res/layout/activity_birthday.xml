@@ -31,7 +31,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:text="Date of Birth"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
 
             <CalendarView
                 android:id="@+id/calendar"
@@ -44,20 +44,17 @@
                 android:id="@+id/btnContinue"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:layout_centerHorizontal="true"
-                android:text="Continue"
-                android:layout_below="@+id/calendar"
-                android:layout_marginTop="10dp"
                 android:layout_alignParentBottom="true"
-                android:textAllCaps="false"/>
+                android:layout_below="@+id/calendar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Continue"
+                android:textAllCaps="false" />
 
         </RelativeLayout>
 
 
-
     </ScrollView>
-
-
 
 
 </RelativeLayout>
